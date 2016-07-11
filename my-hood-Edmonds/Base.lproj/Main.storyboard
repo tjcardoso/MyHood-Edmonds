@@ -18,10 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lfT-Tb-Fim">
-                                <rect key="frame" x="20" y="84" width="560" height="496"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xRj-Lo-MKg">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                 <subviews>
@@ -31,10 +27,10 @@
                                             <constraint firstAttribute="width" constant="51" id="MrD-ho-BbY"/>
                                             <constraint firstAttribute="height" constant="37" id="mYc-5B-cwb"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="camera"/>
+                                        <state key="normal" image="camera"/>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="M6g-v7-2B8">
-                                        <rect key="frame" x="213" y="7" width="174" height="45"/>
+                                        <rect key="frame" x="213" y="15" width="174" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="174" id="NF6-1l-nqg"/>
                                             <constraint firstAttribute="height" constant="45" id="iMN-wj-F7G"/>
@@ -43,13 +39,72 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.1803921568627451" green="0.52941176470588236" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="M6g-v7-2B8" secondAttribute="bottom" constant="8" id="DVc-d2-Gpb"/>
+                                    <constraint firstAttribute="bottom" secondItem="M6g-v7-2B8" secondAttribute="bottom" id="DVc-d2-Gpb"/>
                                     <constraint firstItem="M6g-v7-2B8" firstAttribute="centerX" secondItem="xRj-Lo-MKg" secondAttribute="centerX" id="F4m-jr-Pyz"/>
                                     <constraint firstAttribute="trailing" secondItem="pLN-Fc-zas" secondAttribute="trailing" constant="8" id="Lb7-yG-63K"/>
                                     <constraint firstItem="pLN-Fc-zas" firstAttribute="top" secondItem="xRj-Lo-MKg" secondAttribute="top" constant="20" id="Whl-Xv-MdG"/>
                                     <constraint firstAttribute="height" constant="60" id="cEe-iu-9lb"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lfT-Tb-Fim">
+                                <rect key="frame" x="20" y="84" width="560" height="496"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="92" id="QUB-Ta-FXS" customClass="PostCell" customModule="my_hood_Edmonds" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="QUB-Ta-FXS" id="Yua-ti-6fg">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="92"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="eVO-uQ-Gav">
+                                                    <rect key="frame" x="8" y="8" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="0jR-IT-SZd"/>
+                                                        <constraint firstAttribute="height" constant="70" id="lBM-oO-HbX"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Music man needs to go" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhr-e4-xdv">
+                                                    <rect key="frame" x="86" y="11" width="466" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="qIz-ag-a3R"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="u4V-tD-Txu">
+                                                    <rect key="frame" x="86" y="33" width="466" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="oTm-6n-xPA"/>
+                                                    </constraints>
+                                                    <string key="text">Hey, this neighbour is such a punk. He listens to loud Korn music. Lets call the police to harsh is mellow on this coming Saturday night. adsfhadfhasdfhajsdfhaskdh kasdjfh ajksdhf kashdf hasdf kjahsdf </string>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Yhr-e4-xdv" firstAttribute="top" secondItem="Yua-ti-6fg" secondAttribute="topMargin" constant="3" id="1Qd-D9-4xW"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="eVO-uQ-Gav" secondAttribute="bottom" constant="2.5" id="E4I-cy-cD3"/>
+                                                <constraint firstItem="u4V-tD-Txu" firstAttribute="trailing" secondItem="Yua-ti-6fg" secondAttribute="trailingMargin" id="Fh2-AU-fQ9"/>
+                                                <constraint firstItem="Yhr-e4-xdv" firstAttribute="leading" secondItem="eVO-uQ-Gav" secondAttribute="trailing" constant="8" id="Q9h-gQ-B5B"/>
+                                                <constraint firstItem="Yhr-e4-xdv" firstAttribute="trailing" secondItem="Yua-ti-6fg" secondAttribute="trailingMargin" id="bIp-il-utQ"/>
+                                                <constraint firstItem="eVO-uQ-Gav" firstAttribute="top" secondItem="Yua-ti-6fg" secondAttribute="topMargin" id="nTC-2l-MPa"/>
+                                                <constraint firstItem="u4V-tD-Txu" firstAttribute="top" secondItem="Yua-ti-6fg" secondAttribute="topMargin" constant="25" id="naF-23-3NT"/>
+                                                <constraint firstItem="eVO-uQ-Gav" firstAttribute="leading" secondItem="Yua-ti-6fg" secondAttribute="leadingMargin" id="v1O-IA-Aoa"/>
+                                                <constraint firstItem="u4V-tD-Txu" firstAttribute="leading" secondItem="eVO-uQ-Gav" secondAttribute="trailing" constant="8" id="vmT-LD-J45"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="descLbl" destination="u4V-tD-Txu" id="aAa-o1-xf9"/>
+                                            <outlet property="postImage" destination="eVO-uQ-Gav" id="UmA-gv-SaL"/>
+                                            <outlet property="titleLbl" destination="Yhr-e4-xdv" id="thP-gK-wGW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -69,6 +124,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back" width="413" height="415"/>
         <image name="camera" width="600" height="485"/>
         <image name="logo" width="418" height="116"/>
     </resources>

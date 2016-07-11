@@ -13,6 +13,7 @@
 		57B96C601D2F45B8006253D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B96C5F1D2F45B8006253D6 /* Assets.xcassets */; };
 		57B96C631D2F45B8006253D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B96C611D2F45B8006253D6 /* LaunchScreen.storyboard */; };
 		57B96C6D1D2F4627006253D6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B96C6C1D2F4627006253D6 /* Post.swift */; };
+		57F1DB511D3445000077FAC6 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1DB501D3445000077FAC6 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		57B96C621D2F45B8006253D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57B96C641D2F45B8006253D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57B96C6C1D2F4627006253D6 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		57F1DB501D3445000077FAC6 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +58,9 @@
 		57B96C571D2F45B8006253D6 /* my-hood-Edmonds */ = {
 			isa = PBXGroup;
 			children = (
-				57B96C6B1D2F4612006253D6 /* resources */,
 				57B96C6A1D2F45FA006253D6 /* model */,
+				57F1DB4F1D3444C90077FAC6 /* view */,
+				57B96C6B1D2F4612006253D6 /* resources */,
 				57B96C581D2F45B8006253D6 /* AppDelegate.swift */,
 				57B96C5A1D2F45B8006253D6 /* ViewController.swift */,
 				57B96C5C1D2F45B8006253D6 /* Main.storyboard */,
@@ -81,6 +84,14 @@
 			children = (
 			);
 			name = resources;
+			sourceTree = "<group>";
+		};
+		57F1DB4F1D3444C90077FAC6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				57F1DB501D3445000077FAC6 /* PostCell.swift */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 				57B96C6D1D2F4627006253D6 /* Post.swift in Sources */,
 				57B96C5B1D2F45B8006253D6 /* ViewController.swift in Sources */,
 				57B96C591D2F45B8006253D6 /* AppDelegate.swift in Sources */,
+				57F1DB511D3445000077FAC6 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +320,7 @@
 				57B96C691D2F45B8006253D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
